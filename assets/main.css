@@ -29,7 +29,7 @@ main {
 }
 
 nav {
-  background-color: #242424;
+  background-color: #cfbb90;
   height: 50px;
   line-height: 50px;
   display: -webkit-box;
@@ -44,6 +44,11 @@ nav {
           justify-content: space-between;
   padding: 0 16px;
   position: relative;
+}
+
+.masthead-image {
+    width: 276px;
+    
 }
 
 .menu {
@@ -195,18 +200,21 @@ nav {
 }
 
 .masthead {
-  background: #1abc9c;
+  background: #e1d4b9;
   width: 100%;
   height: 500px;
   margin: 0 0 10rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: column;
   color: #fff;
+}
+
+@media all and (min-width: 500px) {
+    .masthead {
+        flex-direction: row;
+    }
 }
 
 .col {
@@ -223,7 +231,7 @@ nav {
 }
 
 .masthead-header {
-  font-size: 4rem;
+  font-size: 2rem;
   line-height: .9;
   margin: 0 0 0.75rem;
 }
@@ -239,8 +247,9 @@ nav {
   border: 1px solid #fff;
   border-radius: 5px;
   color: #fff;
-  padding: 0.5rem 0.75rem;
+  padding: .5rem .75rem;
   outline: none;
+  margin: 1rem 0;  
   -webkit-transition: background 180ms ease-in-out, color 180ms ease-in-out;
   transition: background 180ms ease-in-out, color 180ms ease-in-out;
 }
